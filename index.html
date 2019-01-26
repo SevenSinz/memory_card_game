@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
+
 <body>
+    <section class="memory-game">
+        
+        <!-- 1- drive -->
+        <div class="memory-card" data-framework="drive">
+            <!-- data-framework: this adds data to DOM. so we can compara the cards that are flipped, if they are the same -->
+            <img class="front-face" src="img/drive.png" alt="img/altpic.png">
+            <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+       
+        <div class="memory-card" data-framework="drive">
+                <img class="front-face" src="img/drive.png" alt="img/altpic.png">
+                <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+        
+        <!-- 2- factfulness -->
+        <div class="memory-card"  data-framework="factfulness">
+            <img class="front-face" src="img/factfulness.png" alt="img/altpic.png">
+            <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+       
+        <div class="memory-card"  data-framework="factfulness">
+            <img class="front-face" src="img/factfulness.png" alt="img/altpic.png">
+            <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+        
+        <!-- 3- sapien -->
+        <div class="memory-card"  data-framework="sapien">
+                <img class="front-face" src="img/sapien.png" alt="img/altpic.png">
+                <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+            </div>
+            <div class="memory-card"  data-framework="sapien">
+                    <img class="front-face" src="img/sapien.png" alt="img/altpic.png">
+                    <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+            </div>
+        
+        <!-- 4- industries -->
+        <div class="memory-card"  data-framework="industries">
+                <img class="front-face" src="img/industries.png" alt="img/altpic.png">
+                <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+       
+        <div class="memory-card"  data-framework="industries">
+                <img class="front-face" src="img/industries.png" alt="img/altpic.png">
+                <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+       
+        <!-- 5- nationsfail -->
+        <div class="memory-card"  data-framework="nationsfail">
+            <img class="front-face" src="img/nationsfail.png" alt="img/altpic.png">
+            <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+        
+        <div class="memory-card"  data-framework="nationsfail">
+            <img class="front-face" src="img/nationsfail.png" alt="img/altpic.png">
+            <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+        
+        <!-- 6- strategy -->
+        <div class="memory-card"  data-framework="strategy">
+                <img class="front-face" src="img/strategy.png" alt="img/altpic.png">
+                <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>
+        <div class="memory-card"  data-framework="strategy">
+                <img class="front-face" src="img/strategy.png" alt="img/altpic.png">
+                <img class="back-face"  src="img/bestbooks.png" alt="img/altpic2.png">
+        </div>  
     
+    </section>
+    <!-- CREATING SPACE FOR COUNTER -->
+    <div id="counter"></div>
+
+    <script src="./scripts.js"></script> 
 </body>
 </html>

@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100vh;
+    display: flex;
+    background: #060AB2;
+  }
+  
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* 3D flip effect */
+    perspective: 1000px;
+  }
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+   /* start click effect --> */
+    transform: scale(1);
+    /* 3D space positioning */
+    transform-style: preserve-3d;
+    /* movement effect */
+    transition: transform .5s;
+   }
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+   }
+     /* --> end click effect */
+
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    /* to reveal the back page */
+    backface-visibility: hidden;
+  }
+/* flip card */
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  .front-face {
+    transform: rotateY(180deg);
+  }
