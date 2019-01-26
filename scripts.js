@@ -67,12 +67,9 @@ function resetForNextMatch(){
 
 (function shuffle() {
        cards.forEach(card => {
-         let randomI = Math.floor(Math.random() * 12);
-         card.style.order = randomI;
+         let randomOrder = Math.floor(Math.random() * 12);
+         card.style.order = randomOrder;
        });
      })();
 
 cards.forEach(card => card.addEventListener('click', flipCards));
-
-
-
